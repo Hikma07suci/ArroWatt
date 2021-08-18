@@ -7,4 +7,5 @@ The value of these variable is stated as X and Y in the code. Analog data from t
 ![Joy Stick](https://user-images.githubusercontent.com/65016480/129911166-e711e9cb-dc01-4ea6-9b7a-9821a10d3391.jpg)
 
 The driver and motor used on this project is shown in the picture bellow
+
 ![Motor and Driver](https://user-images.githubusercontent.com/65016480/129914424-325de699-ad37-4745-8e4a-58057b8b7595.jpg)
