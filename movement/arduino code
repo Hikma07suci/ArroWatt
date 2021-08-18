@@ -54,4 +54,82 @@ void loop()
   {
     kiriAtas();
   }
+  else
+  {
+    Stop();
+  }
+}
+
+/////// Motor Driver ///////
+Void maju()
+{
+  motor1.setSpeed(128);
+  motor2.setSpeed(-128);
+  motor3.setSpeed(-128);
+  motor4.setSpeed(128);
+  Serial.print("maju");
+  delay(500);
+}
+Void mundur()
+{
+  motor1.setSpeed(-128);
+  motor2.setSpeed(128);
+  motor3.setSpeed(128);
+  motor4.setSpeed(-128);
+  Serial.print("mundur");
+  delay(500);
+}
+Void kanan()
+{
+  motor1.setSpeed(128);
+  motor2.setSpeed(128);
+  motor3.setSpeed(128);
+  motor4.setSpeed(128);
+  Serial.print("kanan");
+  delay(500);
+}
+Void mundur()
+{
+  motor1.setSpeed(-128);
+  motor2.setSpeed(-128);
+  motor3.setSpeed(-128);
+  motor4.setSpeed(-128);
+  Serial.print("kiri");
+  delay(500);
+}
+Void kananAtas()
+{
+  motor1.setSpeed(128);
+  motor2.setSpeed(0);
+  motor3.setSpeed(0);
+  motor4.setSpeed(128);
+  Serial.print("kananAtas");
+  delay(500);
+}
+Void kananBawah()
+{
+  motor1.setSpeed(0);
+  motor2.setSpeed(128);
+  motor3.setSpeed(128);
+  motor4.setSpeed(0);
+  Serial.print("kananBawah");
+  delay(500);
+}
+Void kiriBawah()
+{
+  motor1.setSpeed(-128);
+  motor2.setSpeed(0);
+  motor3.setSpeed(0);
+  motor4.setSpeed(-128);
+  Serial.print("kananAtas");
+  delay(500);
+}
+Void kiriAtas()
+{
+  motor1.setSpeed(0);
+  motor2.setSpeed(-128);
+  motor3.setSpeed(-128);
+  motor4.setSpeed(0);
+  Serial.print("kananBawah");
+  delay(500);
 }
