@@ -1,1 +1,2 @@
 # ArroWatt
+#ArroWatt Robot is a project of Heriot-Watt University Malaysia. I was part of the project during my final year. I was working on the electrical and control parts of the robot. this Robot is controlled by using Arduino Mega. according to Robocon 2021 rules, each team use 2 robots, AR and TR. on this project I will talk more about TR robot especially on the movement part (using mecanum wheel), Mapping (Ultrasonic sensor and line tracking) and how I build a DIY Wired remote.
