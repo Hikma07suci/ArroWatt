@@ -133,3 +133,12 @@ Void kiriAtas()
   Serial.print("kananBawah");
   delay(500);
 }
+Void Stop()
+{
+  motor1.setSpeed(0);
+  motor2.setSpeed(0);
+  motor3.setSpeed(0);
+  motor4.setSpeed(0);
+  Serial.print("kananBawah");
+  delay(500);
+}
