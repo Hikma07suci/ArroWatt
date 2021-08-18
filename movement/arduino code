@@ -1,3 +1,57 @@
 #include "CytronMotorDriver.h"
-CytronMD motor1(PWM_DIR, 3, 4);
-CytronMD motor2(PWM_DIR, 9, 10);
+//Variable declaration and pin assignation
+CytronMD motor1(PWM_DIR, 13, 43);
+CytronMD motor2(PWM_DIR, 12, 47);
+CytronMD motor3(PWM_DIR, 11, 51);
+CytronMD motor4(PWM_DIR, 10, 53);
+int joyX=A0;
+int joyY=A1;
+int xValue;
+int yValue;
+
+void setup() 
+{
+  Serial.begin(9600);
+}
+void loop() 
+{
+  xValue = analogRead(joyX);
+  yValue = analogRead(joyY);
+  
+  Serial.print(xValue);
+  Serial.print("\t");
+  Serial.println(yValue);
+   
+  if((xValue==1023) && (yValue==512))
+  {
+    maju();
+  }
+  else if ((xValue==0) && (yValue==512))
+  {
+    mundur();
+  }
+  else if ((xValue==512) && (yValue==1023))
+  {
+    kanan();
+  }
+  else if ((xValue==512) && (yValue==0))
+  {
+    kiri();
+  }
+  else if ((xValue==1023) && (yValue==1023))
+  {
+    kananAtas();
+  }
+  else if ((xValue==1023) && (yValue==0))
+  {
+    kananBawah();
+  }
+  else if ((xValue==0) && (yValue==0))
+  {
+    kiriBawah();
+  }
+  else if ((xValue==0) && (yValue==1023))
+  {
+    kiriAtas();
+  }
+}
