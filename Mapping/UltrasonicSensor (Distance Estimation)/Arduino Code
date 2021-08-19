@@ -1,0 +1,25 @@
+int triggerPin = 46;      //Define IO pins
+int echoPin = 48;
+
+long duration;
+double distance;
+
+void setup()
+{
+  pinMode(trigerPin, OUTPUT);   //Define pin
+  pinMode(echoPin, INPUT);
+  Serial.begin(9600);           //Starts the serial communication
+}
+
+void loop()
+{
+  digitalWrite(triggerPin, LOW);   //Reset the trigger pin
+  delay(1000);
+  digitalWrite(trigPin, HIGH);     //Create a 10 micro second pulse
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH); //Read the pulse travel time in microseconds.
+  distance= duration*0.034/2;        //Calculate the distance - speed of sound is 0.034 cm per microsecond
+  Serial.print("Distance: ");        //Display the distance on the serial monitor
+  Serial.println(distance);
+}
