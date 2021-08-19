@@ -9,3 +9,7 @@ The value of these variable is stated as X and Y in the code. Analog data from t
 The driver and motor used on this project is shown in the picture bellow
 
 ![Motor and Driver](https://user-images.githubusercontent.com/65016480/129914424-325de699-ad37-4745-8e4a-58057b8b7595.jpg)
+
+Motor driver and DC motor are connected to arduino mega according to the wiring diagram bellow
+
+![image](https://user-images.githubusercontent.com/65016480/130023494-844d181d-5ab5-4419-a5a3-efa9a1e0ccf8.png)
