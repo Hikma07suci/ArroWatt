@@ -1,0 +1,19 @@
+int IRPin= 50;
+Int Dot= 0;
+void setup() 
+{
+pinMode(IRPin,INPUT);
+Serial.begin(9600);           //Starts the serial communication
+}
+
+void loop() 
+{
+ 
+if(digitalRead(4)==High)
+{
+  Dot= Dot+1;
+  Serial.print("Dot: ");        //The Dot count
+  Serial.println(Dot);
+}
+
+}
