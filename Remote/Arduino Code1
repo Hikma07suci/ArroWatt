@@ -37,6 +37,7 @@ void loop()
   buttonState5 = digitalRead(stage3c);
   buttonState6 = digitalRead(stage3f);
   ///////////////////////////////////////
+  if (buttonState1 == HIGH) 
   {
     // turn LED on:
     digitalWrite(led1c,HIGH );
