@@ -1,1 +1,3 @@
+![Mapping](https://user-images.githubusercontent.com/65016480/130230081-cb169fa8-7105-4b1e-9066-5688285ed317.jpg)
 
+This function is used for automatic estimation for target straight line position. The Diagram above shows the rough estimation of target for catapult system. the robot moves from square box on the bottom right of arena. move forward until ultrasonic sensor detect the distance between TR and fnce for 2 cm. Then it stops and move to the left and reach the red dot as target position by counting the white circle on the fence wall. this white circle can be detected by using IR Sensor. The real counting for the red dot position will be more accurate after the real trial on the real arena condition. 
