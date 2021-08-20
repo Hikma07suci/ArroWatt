@@ -1,0 +1,106 @@
+const int led1c =  22;
+const int led1f =  24;
+const int led2c =  26;
+const int led2f =  28;
+const int led3c =  32;
+const int led3f =  25;
+
+const int stage1c= 1;
+const int stage1f= 2;
+const int stage2c= 3;
+const int stage2f= 4;
+const int stage3c= 5;
+const int stage3f= 6;
+
+void setup() 
+{
+  pinMode(led1c, OUTPUT);
+  pinMode(led1f, OUTPUT);
+  pinMode(led2c, OUTPUT);
+  pinMode(led2f, OUTPUT);
+  pinMode(led3c, OUTPUT);
+  pinMode(led3f, OUTPUT);
+  
+  pinMode(stage1c, INPUT);
+  pinMode(stage1f, INPUT);
+  pinMode(stage2c, INPUT);
+  pinMode(stage2f, INPUT);
+  pinMode(stage3c, INPUT);
+  pinMode(stage3f, INPUT);
+}
+void loop() 
+{
+  buttonState1 = digitalRead(stage1c);
+  buttonState2 = digitalRead(stage1f);
+  buttonState3 = digitalRead(stage2c);
+  buttonState4 = digitalRead(stage2f);
+  buttonState5 = digitalRead(stage3c);
+  buttonState6 = digitalRead(stage3f);
+  ///////////////////////////////////////
+  {
+    // turn LED on:
+    digitalWrite(led1c,HIGH );
+  } 
+  else 
+  {
+    // turn LED off:
+    digitalWrite(led1c, LOW);
+  }
+  
+  if (buttonState2 == HIGH) 
+  {
+    // turn LED on:
+    digitalWrite(led1f,HIGH );
+  } 
+  else 
+  {
+    // turn LED off:
+    digitalWrite(led1f, LOW);
+  }
+  ///////////////////////////////////////
+  
+  if (buttonState3 == HIGH) 
+  {
+    // turn LED on:
+    digitalWrite(led2c,HIGH );
+  } 
+  else 
+  {
+    // turn LED off:
+    digitalWrite(led2c, LOW);
+  }
+  
+  if (buttonState4 == HIGH) 
+  {
+    // turn LED on:
+    digitalWrite(led2f,HIGH );
+  } 
+  else 
+  {
+    // turn LED off:
+    digitalWrite(led2f, LOW);
+  }
+  //////////////////////////////////
+  
+  if (buttonState5 == HIGH) 
+  {
+    // turn LED on:
+    digitalWrite(led3c,HIGH );
+  } 
+  else 
+  {
+    // turn LED off:
+    digitalWrite(led3c, LOW);
+  }
+  
+  if (buttonState6 == HIGH) 
+  {
+    // turn LED on:
+    digitalWrite(led3f,HIGH );
+  } 
+  else 
+  {
+    // turn LED off:
+    digitalWrite(led3f, LOW);
+  }
+}
